@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF4D7540</color>
+    <color name="colorPrimaryDark">#39612C</color>
+    <color name="colorAccent">#6E6D73</color>
+    <color name="paneraGreen">#FF4D7540</color>
+    <color name="paneraDarkGreen">#39612C</color>
+    <color name="paneraWhite">#FFFFFF</color>
+    <color name="paneraGrey">#EBEBEB</color>
+    <color name="paneraDarkGrey">#6E6D73</color>
+    <color name="myBlack">#FF333333</color>
+
+</resources>

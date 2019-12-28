@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/paneraWhite"
+    tools:context=".DineInActivity">
+
+    <Button
+        android:id="@+id/btnBackToCart"
+        style="@style/btn_back_style"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnBackToCart"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:fontFamily="@font/open_sans_regular"
+        android:gravity="center"
+        android:text="@string/is_this_for_here_or_to_go"
+        android:textColor="@color/myBlack"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnDineIn"
+            style="@style/btn_dine_in"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/open_sans_regular"
+            android:text="@string/dine_in"
+            android:textAllCaps="false"
+            android:textColor="@color/myBlack"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnToGo"
+            style="@style/btn_dine_in"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_marginStart="32dp"
+            android:fontFamily="@font/open_sans_regular"
+            android:text="@string/to_go"
+            android:textAllCaps="false"
+            android:textColor="@color/myBlack"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

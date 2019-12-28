@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlHomeScreen"
+    tools:context=".WelcomeActivity"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/paneraGreen"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvWelcomeToFoodClub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/paneraWhite"
+        android:fontFamily="@font/open_sans_regular"
+        android:textSize="32sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="440dp"
+        android:layout_marginLeft="100dp"
+        android:text="@string/welcome_to_food_club"/>
+    <TextView
+        android:id="@+id/tvTabToOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/paneraWhite"
+        android:fontFamily="@font/open_sans_semi_bold"
+        android:textSize="72sp"
+        android:layout_alignLeft="@id/tvWelcomeToFoodClub"
+        android:layout_below="@id/tvWelcomeToFoodClub"
+        android:layout_marginTop="-20dp"
+        android:text="@string/tab_to_order"/>
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="480dp"
+        android:layout_height="480dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo"
+        android:rotation="45"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="-48dp"
+        android:layout_marginTop="-48dp"/>
+</RelativeLayout>

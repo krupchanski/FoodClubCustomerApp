@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Dyplom 1.0</string>
+    <string name="tab_to_order">Tab to order</string>
+    <string name="welcome">Welcome</string>
+    <string name="welcome_to_food_club">Welcome to Food Club</string>
+    <string name="welcome_to_food_club_">Welcome to Food Club!</string>
+    <string name="join_myclub"><u>Join MyClub</u></string>
+    <string name="join_myclub_bold">Join <b>MyClub</b></string>
+    <string name="sign_in_to_myClub">Sign in to MyClub</string>
+    <string name="continue_as_guest">Continue as Guest</string>
+    <string name="privacy"><u>Privacy</u></string>
+    <string name="terms_of_use"><u>Terms Of Use</u></string>
+    <string name="allergen_and_nutrition_information"><u>Allergen And Nutrition Information</u></string>
+    <string name="quit"><u>Quit</u></string>
+    <string name="RecentFavorites">Recents &amp; Faves</string>
+    <string name="add">Add</string>
+    <string name="display">Display</string>
+    <string name="clear">Clear</string>
+    <string name="nutritional_info"><u>Nutritional Info</u></string>
+    <string name="quantity">Quantity</string>
+    <string name="customize">Customize</string>
+    <string name="add_to_order">Add to Order</string>
+    <string name="checkout">Checkout</string>
+    <string name="add_special_instructions"><u>Add special instructions</u></string>
+    <string name="is_this_for_here_or_to_go">Is this for here or to go?</string>
+    <string name="take_a_plate_and_enter_its_number_below">Take a plate and enter its number below</string>
+    <string name="no_plates_available">No Plates Available</string>
+    <string name="take_a_seat_and_we_ll_get_to_you_when_your_food_is_ready">Take a seat and we\'ll get to you when your food is ready..</string>
+    <string name="thank_you_were_preparing_your_order_now">Thank You.\nWe\'re preparing your order now.</string>
+    <string name="dine_in">Dine In</string>
+    <string name="to_go">To Go</string>
+    <string name="thanks_i_m_finished"><u>Thanks, I\'m finished</u></string>
+    <string name="processing_your_order">Processing your order...</string>
+    <integer-array name="quantity_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </integer-array>
+</resources>
+
+    <!--<div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+-->

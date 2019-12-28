@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paneraWhite"
+    android:orientation="vertical"
+    tools:context=".CartActivity">
+
+    <Button
+        android:id="@+id/btnBackToMenuActivityFromCart"
+        style="@style/btn_x_style"
+        android:layout_margin="32dp" />
+
+    <TextView
+        android:id="@+id/tvItemsInOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btnBackToMenuActivityFromCart"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/open_sans_regular"
+        android:gravity="center_vertical"
+        android:text="1 Item In Your Order"
+        android:textColor="@color/myBlack"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/tvWantToMakeAChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvItemsInOrder"
+        android:layout_alignStart="@id/tvItemsInOrder"
+        android:fontFamily="@font/open_sans_regular"
+        android:text="Want to make a quick change to an item? Tab the item's image to customize"
+        android:textColor="@color/myBlack"
+        android:textSize="14sp" />
+
+    <ScrollView
+        android:id="@+id/svItemsInCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:layout_below="@id/tvWantToMakeAChange"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/llItemsInCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+                <ImageView
+                    android:id="@+id/ivItemInCart"
+                    android:layout_width="144dp"
+                    android:layout_height="144dp"
+                    android:src="@drawable/breakfast_1"
+                    android:layout_weight="2"
+                    android:clickable="true"
+                    android:focusable="true"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="5"
+                    android:layout_marginStart="32dp">
+                    <TextView
+                        android:id="@+id/tvItemNameInCart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bacon, Egg &amp; Cheese on Brioche"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:textSize="18sp"
+                        android:textColor="@color/myBlack"/>
+                    <TextView
+                        android:id="@+id/tvItemCalInCart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="453 Cal"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:textColor="@color/myBlack"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvItemPriceInCart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="$4.99"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:textColor="@color/myBlack"/>
+                <Spinner
+                    android:id="@+id/spQuantityInCart"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:textColor="@color/myBlack"/>
+                <Button
+                    android:id="@+id/btnRemoveItemCart"
+                    style="@style/btn_remove_item_style"
+                    android:layout_marginStart="48dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>-->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rlCheckout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_round_green_btn"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:paddingLeft="48dp"
+        android:paddingTop="24dp"
+        android:paddingRight="48dp"
+        android:paddingBottom="24dp">
+        <TextView
+            android:id="@+id/tvCheckout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/checkout"
+            android:textSize="18sp"
+            android:textColor="@color/paneraWhite"
+            android:fontFamily="@font/open_sans_semi_bold"/>
+        <TextView
+            android:id="@+id/tvCartValueItemActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="$4.99"
+            android:textColor="@color/paneraWhite"
+            android:textSize="18sp"
+            android:fontFamily="@font/open_sans_regular"
+            android:layout_toEndOf="@id/tvCheckout"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llMenuItem"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/ivMenuItemImage"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/breakfast_1">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tvItemName"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/open_sans_regular"
+        android:gravity="center_horizontal"
+        android:maxLines="3"
+        android:singleLine="false"
+        android:textColor="@color/myBlack"
+        android:textSize="18sp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvItemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$4.99"
+            android:textColor="@color/paneraDarkGrey"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/ic_point_24dp" />
+
+        <TextView
+            android:id="@+id/tvItemCcal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="453 ccal"
+            android:textColor="@color/paneraDarkGrey"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

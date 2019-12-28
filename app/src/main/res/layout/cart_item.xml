@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llCartItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingStart="112dp"
+    android:weightSum="10">
+
+    <ImageView
+        android:id="@+id/ivItemInCart"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        android:layout_weight="0"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/breakfast_1"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/tvItemNameInCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_regular"
+            android:text="Bacon, Egg &amp; Cheese on Brioche"
+            android:textColor="@color/myBlack"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvItemCalInCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/open_sans_regular"
+            android:text="453 Cal"
+            android:textColor="@color/myBlack" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvItemPriceInCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:fontFamily="@font/open_sans_regular"
+        android:text="$4.99"
+        android:textColor="@color/myBlack" />
+
+    <Spinner
+        android:id="@+id/spQuantityInCart"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:fontFamily="@font/open_sans_regular"
+        android:textColor="@color/myBlack" />
+
+    <Button
+        android:id="@+id/btnRemoveItemCart"
+        style="@style/btn_remove_item_style"
+        android:layout_gravity="center"
+        android:layout_marginStart="48dp" />
+</LinearLayout>

@@ -1,0 +1,31 @@
+{
+  "date": "Dec 26, 2019 7:20:49 PM",
+  "dineIn": false,
+  "id": "69WLhjYCJMGE6B0p7Vup",
+  "itemsMap": {
+    "Still Water": {
+      "cal": 0,
+      "categories": [
+        "Beverages"
+      ],
+      "isAvailable": true,
+      "name": "Still Water",
+      "price": 0.99,
+      "quantity": 1
+    },
+    "Cinnamon Rolls": {
+      "cal": 300,
+      "categories": [
+        "New",
+        "Desserts"
+      ],
+      "img": "",
+      "isAvailable": true,
+      "name": "Cinnamon Rolls",
+      "price": 2.59,
+      "quantity": 1
+    }
+  },
+  "plateNumber": 0,
+  "status": "PENDING"
+}
