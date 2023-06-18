@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Item {
+    private String order;
     private String name;
     private double price;
     private int cal;

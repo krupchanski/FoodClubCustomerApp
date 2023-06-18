@@ -11,15 +11,24 @@
         android:roundIcon="@mipmap/ic_example_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ProcessingActivity"></activity>
-        <activity android:name=".ThankYouActivity" />
-        <activity android:name=".NumberPlateActivity" />
-        <activity android:name=".DineInActivity" />
-        <activity android:name=".CartActivity" />
-        <activity android:name=".ItemActivity" />
-        <activity android:name=".MenuActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".WelcomeActivity">
+        <activity android:name=".ProcessingActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".ThankYouActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".NumberPlateActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".DineInActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".CartActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".ItemActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".MenuActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".WelcomeActivity"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -32,6 +32,9 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
 
         ClassForTestingStuff c = new ClassForTestingStuff();
 
+
+
+
         DBHelper.loadCategories();
         DBHelper.loadItems();
 
@@ -40,6 +43,13 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
         editor.clear();
         editor.apply();
     }
+
+
+
+
+
+
+
 
     @Override
     protected void onStart() {

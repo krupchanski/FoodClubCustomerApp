@@ -96,7 +96,7 @@ public class ItemActivity extends AppCompatActivity implements View.OnClickListe
 
         //ivItem.setImageResource(itemReceived.getImg());
         //ivItem.setImageResource(getResources().getIdentifier(itemReceived.getImg(), "drawable", MenuActivity.this.getPackageName()));
-        ivItem.setImageResource(getResources().getIdentifier("breakfast_1", "drawable", ItemActivity.this.getPackageName()));
+        ivItem.setImageResource(getResources().getIdentifier("placeholder", "drawable", ItemActivity.this.getPackageName()));
         //btnCategory.setBackgroundResource(resources.getIdentifier(category.getIcon(), "drawable", MenuActivity.this.getPackageName()));
 
         tvItemPrice.setText("$".concat(String.valueOf(itemReceived.getPrice())));

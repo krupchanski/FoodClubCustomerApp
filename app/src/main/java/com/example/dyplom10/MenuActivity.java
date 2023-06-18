@@ -220,39 +220,6 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-/*
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Log.d(Global.TAG, "Menu Activity onResume");
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        Log.d(Global.TAG, "Menu Activity onPause");
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        Log.d(Global.TAG, "Menu Activity onStop");
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-        Log.d(Global.TAG, "Menu Activity onRestart");
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Log.d(Global.TAG, "Menu Activity onDestroy");
-    }
-*/
-
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -298,7 +265,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
             TextView tvCcal = menuItemLayout.findViewById(R.id.tvItemCcal);
 
             //ivMenuItem.setImageResource(Global.filteredItems.get(i).getImg());
-            ivMenuItem.setImageResource(getResources().getIdentifier("breakfast_1", "drawable", MenuActivity.this.getPackageName()));
+            ivMenuItem.setImageResource(getResources().getIdentifier("placeholder", "drawable", MenuActivity.this.getPackageName()));
             tvMenuItemName.setText(String.valueOf(filteredItems.get(i).getName()));
             tvPrice.setText("$".concat(String.valueOf(filteredItems.get(i).getPrice())));
             tvCcal.setText(String.valueOf(filteredItems.get(i).getCal()).concat(" ccal"));

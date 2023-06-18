@@ -40,12 +40,11 @@ public class DBHelper {
 
     public static void loadCategories() {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
-
         CollectionReference categoriesRef = db.collection("categories");
-
         categoriesRef.get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
             @Override
             public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+                Global.categories.clear();
                 for (QueryDocumentSnapshot documentSnapshot : queryDocumentSnapshots) {
                     Category category = documentSnapshot.toObject(Category.class);
                     Global.categories.add(category);
